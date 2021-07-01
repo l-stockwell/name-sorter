@@ -46,7 +46,6 @@ namespace nameSorter
             // Split name list by spaces, order by last element (last name), and create the new sorted list
             var sorted = InputList.OrderBy(x => x.Split(' ')
                          .Last())
-                         .ThenBy(x => x)
                          .ToList();
 
             return sorted;
